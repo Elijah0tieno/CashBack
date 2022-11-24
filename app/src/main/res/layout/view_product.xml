@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:contentPadding="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Cash back and com -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <!-- Cash Back -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kes"
+                            android:layout_marginEnd="5dp"
+                            style="@style/TextAppearance.AppCompat"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textStyle="bold"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="18sp"
+                            android:id="@+id/cashBack"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="back"
+                        android:layout_marginEnd="5dp"
+                        style="@style/TextAppearance.AppCompat"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+                <!-- End Cash back -->
+
+                <!-- Com -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kes"
+                            android:layout_marginEnd="5dp"
+                            style="@style/TextAppearance.AppCompat"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.0"
+                            android:id="@+id/com"
+                            android:textStyle="bold"
+                            android:textColor="#239528"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="18sp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Com"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="end"
+                        style="@style/TextAppearance.AppCompat"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+                <!-- End Com -->
+
+            </LinearLayout>
+            <!-- End cash back and com -->
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/image"
+                android:layout_marginBottom="10dp"
+                />
+            <!-- End Image -->
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ringoz Ring"
+                android:id="@+id/title"
+                android:textAlignment="center"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textSize="19sp"
+                android:layout_marginBottom="10dp"
+                />
+            <!-- End Title -->
+
+            <!-- Date and size -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="15g"
+                    android:layout_marginEnd="5dp"
+                    style="@style/TextAppearance.AppCompat"
+                    android:textSize="16sp"
+                    android:id="@+id/size"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 November"
+                    android:layout_marginEnd="5dp"
+                    style="@style/TextAppearance.AppCompat"
+                    android:textSize="16sp"
+                    android:id="@+id/date"
+                    />
+
+            </LinearLayout>
+            <!-- End date and size -->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
